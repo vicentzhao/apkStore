@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="horizontal">
+	
+    <LinearLayout android:layout_height="fill_parent" android:layout_width="0px" android:layout_weight="22"></LinearLayout>
+    <LinearLayout android:layout_height="fill_parent" android:layout_width="0px" android:layout_weight="1122" android:orientation="vertical">
+        <GridView android:id="@+id/app_gridView" android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="460" android:gravity="center" android:horizontalSpacing="30dip" android:listSelector="@drawable/bg_item_fin" android:numColumns="6" android:padding="5dip" android:verticalSpacing="28dip"></GridView>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0px" android:orientation="horizontal" android:layout_weight="46">
+            <TextView android:id="@+id/app_page_index" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@+id/app_pre_page" android:gravity="center" android:layout_marginRight="20dip" android:text="1/1" android:textColor="#FFFFFF" android:visibility="invisible" android:textSize="22sp"/>
+            <Button android:id="@+id/app_pre_page" android:layout_width="120dip" android:layout_height="45dip" android:layout_toLeftOf="@+id/app_next_page" android:gravity="center|center_vertical" android:layout_marginRight="20dip" android:textSize="12sp" android:visibility="invisible" android:text="上一页"/>
+            <Button android:id="@+id/app_next_page" android:layout_width="120dip" android:layout_height="45dip" android:layout_alignParentRight="true" android:gravity="center|center_vertical" android:layout_marginRight="15dip" android:textSize="12sp" android:visibility="invisible" android:text="下一页"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_height="fill_parent" android:layout_width="0px" android:layout_weight="88"></LinearLayout>
+    
+    <LinearLayout android:layout_height="fill_parent" android:layout_width="0px" android:layout_weight="252" android:orientation="vertical">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="114"></LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="344" android:orientation="vertical">
+            <ImageView android:id="@+id/app_icn" android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="278"/>
+            <TextView android:id="@+id/app_name" android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="66" android:gravity="center" android:textSize="28sp" android:singleLine="true"/>
+        </LinearLayout> 
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0px" android:layout_weight="108"></LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_height="fill_parent" android:layout_width="0px" android:layout_weight="51"></LinearLayout>
+
+</LinearLayout>
